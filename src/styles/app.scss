@@ -1,0 +1,48 @@
+//Fonts
+/* 1. Fonts */
+@import "./fonts/fonts";
+
+//Core files
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Structure
+/* 2. General */
+@import "structure/general";
+/* 3. Left Menu */
+@import "structure/left-menu";
+/* 4. Topbar */
+@import "structure/topbar";
+/* 5. Page Head */
+@import "structure/page-head";
+/* 6. Footer */
+@import "structure/footer";
+/* 7. Own Resets */
+@import "structure/resets";
+/* 8. Custom styles */
+@import "structure/custom-styles";
+/* 9. Layouts */
+@import "structure/layouts";
+
+//Components
+/* 10. Helper */
+@import "components/helper";
+/* 11. Social */
+@import "components/social";
+/* 12. Widgets */
+@import "components/widgets";
+/* 13. Custom Checkbox */
+@import "components/custom-checkbox";
+/* 14. Custom Radio */
+@import "components/custom-radio";
+/* 15. Print */
+@import "components/print";
+/* 16. Preloader */
+@import "components/preloader";
+
+// Plugins
+/* 17. Plugins */
+
+// @import "plugins/calendar";
