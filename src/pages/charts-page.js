@@ -20,7 +20,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const LoadableCharts = Loadable({
-  loader: () => import('../components/charts/AllCharts'),
+  loader: () => import('../components/charts/allCharts'),
   loading() {
     return <div>Loading...</div>
   },
