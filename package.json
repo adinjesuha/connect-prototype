@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "connect-prototype",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@apollo/client": "^3.0.0-beta.44",
     "@fullcalendar/bootstrap": "^4.4.0",
     "@fullcalendar/core": "^4.4.0",
     "@fullcalendar/daygrid": "^4.4.0",
@@ -24,6 +24,7 @@
     "gatsby-plugin-sharp": "^2.6.0",
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-transformer-sharp": "^2.5.0",
+    "isomorphic-fetch": "^2.2.1",
     "node-sass": "^4.14.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

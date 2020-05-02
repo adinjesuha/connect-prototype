@@ -1,19 +1,43 @@
 import React from "react"
 import { Link } from "gatsby"
+import { useQuery, gql } from '@apollo/client'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
+const IndexPage = () => {
+  const { data, loading, error } = useQuery(gql`
+    {
+      companies{
+        id
+        name
+        address
+      }
+    }
+  `)
 
-    <Link to="/calendar-page/">Go to Calendar</Link>
-    <br />
-    <Link to="/charts-page/">Go to Charts</Link>
+  if(loading) return <div>Loading...</div>
+  if(error) return (
+    <React.Fragment>
+      <div>Universe broken...</div>
+      <div>{error.errors.map((err, index) => (
+        <p key={index}>{err.message}</p>
+      ))}</div>
+    </React.Fragment>
+  )
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <h1>Hello world!!!</h1>
+      <ul>{data.companies.map((company, id) => (
+        <li key={id}>{company.name}</li>  
+      ))}</ul>
+      <Link to="/calendar-page/">Go to Calendar</Link>
+      <br />
+      <Link to="/charts-page/">Go to Charts</Link>
 
-  </Layout>
-)
+    </Layout>
+  )
+}
 
 export default IndexPage
