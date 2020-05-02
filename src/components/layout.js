@@ -1,4 +1,4 @@
-import React, { Suspense } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container } from 'reactstrap';
@@ -31,14 +31,10 @@ const Layout = ({ children }) => {
 
       <div className="content-page">
         <div className="content">
-          <Container fluid>
-            <Suspense fallback={loading()}>{children}</Suspense>
-          </Container>
+          <Container fluid>{children}</Container>
         </div>
 
-        <Suspense fallback={emptyLoading()}>
-          <Footer />
-        </Suspense>
+        <Footer />
 
       </div>
 

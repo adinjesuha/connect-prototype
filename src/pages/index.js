@@ -20,9 +20,7 @@ const IndexPage = () => {
   if(error) return (
     <React.Fragment>
       <div>Universe broken...</div>
-      <div>{error.errors.map((err, index) => (
-        <p key={index}>{err.message}</p>
-      ))}</div>
+      <p>{err.message}</p>
     </React.Fragment>
   )
   return (
