@@ -15,9 +15,9 @@ const LoadableCallendar = Loadable({
 })
 
 
-const SecondPage = () => (
+const CalendarPage = () => (
   <Layout>
-    <SEO title="Page two" />
+    <SEO title="Calendario" />
     <Row className="page-title align-items-center">
       <Col sm={4} xl={6}>
         <h4 className="mb-1 mt-0">Calendario</h4>
@@ -37,4 +37,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default CalendarPage
