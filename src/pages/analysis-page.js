@@ -4,7 +4,7 @@ import { Row, Col, Card, CardBody } from 'reactstrap'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import About from '../components/analysisComponents/About';
+import About from '../components/analysisComponents/about';
 import Activities from '../components/analysisComponents/activities';
 import ProjectStats from '../components/analysisComponents/stats';
 
