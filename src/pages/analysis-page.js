@@ -43,7 +43,7 @@ const AnalysisPage = () => {
   })
   return (
     <Layout>
-      <SEO title="Analysis"/>
+      <SEO title="Análisis"/>
       <Row className="page-title">
         <Col sm={8} xl={6}>
           <h4 className="mb-1 mt-0">{`Informe No. ${data.reportNumber}`}</h4>

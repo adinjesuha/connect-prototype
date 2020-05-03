@@ -49,7 +49,7 @@ const InvoicePage = () => {
   };
   return (
     <Layout>
-      <SEO title="Invoice"/>
+      <SEO title="Factura"/>
       <Row>
         <Col>
           <Card className="mt-4">
