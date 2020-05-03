@@ -23,7 +23,7 @@ const dashboardRoutes = {
 
 const calendarAppRoutes = {
   id: 2,
-  path: '/apps/calendar',
+  path: '/calendar-page',
   name: 'Calendario',
   header: 'Apps',
   icon: FiCalendar,
@@ -31,7 +31,7 @@ const calendarAppRoutes = {
 
 const projectAppRoutes = {
   id: 3,
-  path: '/apps/projects',
+  path: '/monitoring-page',
   name: 'Monitoreos',
   icon: FiBriefcase,
   badge: {
@@ -42,14 +42,14 @@ const projectAppRoutes = {
 
 const invoiceAppRoutes = {
   id: 4,
-  path: '/apps/invoice',
+  path: '/invoice-page',
   name: 'Facturación',
   icon: FiFileText,
 };
 
 const analisisAppRoutes = {
   id: 5,
-  path: '/apps/analysis',
+  path: '/analysis-page',
   name: 'Análisis',
   icon: FiEye,
 };
