@@ -15,6 +15,8 @@ import {
 import NotificationDropdown from './notification-dropdown'
 import ProfileDropdown from './profile-dropdown'
 
+import Logo from '../images/connect-icon.png'
+
 const Notifications = [
   {
     id: 1,
@@ -65,7 +67,7 @@ const Topbar = ({title}) => {
         <Link to="/" className="navbar-brand mr-0 mr-md-2 logo">
           <span className="logo-lg">
             {/*<img src={logo} alt="" height="24" />*/}
-            <FiLifeBuoy  className="mb-1"/>
+            <img src={Logo} alt="Logo" height="24" className="mb-1"/>
             <span className="d-inline h5 ml-2 text-logo">{title}</span>
           </span>
           <span className="logo-sm">
