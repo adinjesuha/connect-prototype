@@ -5,7 +5,6 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import About from '../components/analysisComponents/about';
-import Activities from '../components/analysisComponents/activities';
 import ProjectStats from '../components/analysisComponents/stats';
 
 const analysisData = [
@@ -46,14 +45,14 @@ const AnalysisPage = () => {
       <SEO title="Análisis"/>
       <Row className="page-title">
         <Col sm={8} xl={6}>
-          <h4 className="mb-1 mt-0">{`Informe No. ${data.reportNumber}`}</h4>
+          <h4 className="mb-1 mt-0">Análisis de Laboratorio</h4>
         </Col>
         <Col sm={4} xl={6} className="text-md-right">
           <div className="btn-group ml-2 d-none d-sm-inline-block">
-            <button type="button" className="btn btn-soft-primary btn-md">Edit</button>
+            <button type="button" className="btn btn-primary btn-md">Editar</button>
           </div>
           <div className="btn-group ml-1 d-none d-sm-inline-block">
-            <button type="button" className="btn btn-soft-danger btn-md">Delete</button>
+            <button type="button" className="btn btn-danger btn-md">Eliminar</button>
           </div>
         </Col>
       </Row>
@@ -61,18 +60,11 @@ const AnalysisPage = () => {
       <ProjectStats {...data} />
 
       <Row>
-        <Col xl={8}>
-        {analysisData.map((sample, i) => (
-          <About key={i} {...sample}/>
-        ))}
+      {analysisData.map((sample, i) => (
+        <Col key={i} xl={6}>
+          <About {...sample}/>
         </Col>
-        <Col xl={4}>
-          <Card>
-            <CardBody>
-              <Activities />
-            </CardBody>
-          </Card>
-        </Col>
+      ))}
       </Row>
     </Layout>
   )

@@ -15,7 +15,7 @@ const Attachments = () => (
               </span>
             </div>
             <Media body>
-              <a href="/" className="d-inline-block mt-2">Landing 1.psd</a>
+              <a href="/" className="d-inline-block mt-2">Attached file</a>
             </Media>
             <div className="float-right mt-1">
               <a href="/" className="p-2"><i className="uil-download-alt font-size-18"></i></a>

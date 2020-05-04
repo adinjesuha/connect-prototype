@@ -38,14 +38,14 @@ const About = (props) => (
 
 					<StripedRowsTable {...props}/>
 
-					<h6 className="font-weight-bold">Comentarios</h6>
+					<h6 className="font-weight-bold">Comentarios de la Muestra</h6>
 					<p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family. Their separate existence is a myth.</p>	
 
 					<div className="mt-4">
 						<h6 className="font-weight-bold">Archivos Adjuntos</h6>
 
 						<div className="row">
-							<div className="col-xl-4 col-md-6">
+							<div className="col-xl-6 col-md-6">
 								<div className="p-2 border rounded mb-2">
 									<div className="media">
 										<div className="avatar-sm font-weight-bold mr-3">
@@ -54,7 +54,7 @@ const About = (props) => (
 											</span>
 										</div>
 										<div className="media-body">
-											<a href="/" className="d-inline-block mt-2">Landing 1.psd</a>
+											<a href="/" className="d-inline-block mt-2">Archivo #1</a>
 										</div>
 										<div className="float-right mt-1">
 											<a href="/" className="p-2"><i className="uil-download-alt font-size-18"></i></a>
@@ -62,7 +62,7 @@ const About = (props) => (
 									</div>
 								</div>
 							</div>
-							<div className="col-xl-4 col-md-6">
+							<div className="col-xl-6 col-md-6">
 								<div className="p-2 border rounded mb-2">
 									<div className="media">
 										<div className="avatar-sm font-weight-bold mr-3">
@@ -71,7 +71,7 @@ const About = (props) => (
 											</span>
 										</div>
 										<div className="media-body">
-											<a href="/" className="d-inline-block mt-2">Landing 2.psd</a>
+											<a href="/" className="d-inline-block mt-2">Archivo #2</a>
 										</div>
 										<div className="float-right mt-1">
 											<a href="/" className="p-2"><i className="uil-download-alt font-size-18"></i></a>

@@ -1,14 +1,21 @@
 import React from 'react';
 import { Row, Col, Card, CardBody } from 'reactstrap';
 
-const ProjectStats = ({client}) => (
+const ProjectStats = ({client, reportNumber}) => (
   <Row>
     <Col>
       <Card>
         <CardBody className="p-0">
+        
           <h6 className="card-title border-bottom p-3 mb-0 header-title">{`Empresa: ${client}`}</h6>
 
           <Row className="py-1">
+            <Col xl={3} sm={6}>
+              <div className="p-3">
+                <p className="mb-2">Análisis No.</p>
+                <h5 className="font-size-16">{reportNumber}</h5>
+              </div>
+            </Col>
             <Col xl={3} sm={6}>
               <div className="p-3">
                 <p className="mb-2">Fecha de Monitoreo</p>
@@ -27,13 +34,8 @@ const ProjectStats = ({client}) => (
                 <h5 className="font-size-16">2</h5>
               </div>
             </Col>
-            <Col xl={3} sm={6}>
-              <div className="p-3">
-                <p className="mb-2">Parametros</p>
-                <h5 className="font-size-16">12</h5>
-              </div>
-            </Col>
           </Row>
+
         </CardBody>
       </Card>
     </Col>

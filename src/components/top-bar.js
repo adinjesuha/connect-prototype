@@ -25,25 +25,11 @@ const Notifications = [
   },
   {
     id: 2,
-    text: 'Nuevo Cliente',
+    text: 'Nuevo análisis generado',
     subText: 'Wow ! this admin looks good and awesome design',
     icon: 'uil uil-comment-message',
     bgColor: 'success'
-  },
-  {
-    id: 3,
-    text: 'Cristina Pride',
-    subText: 'Hi, How are you? What about our next meeting',
-    icon: 'uil uil-comment-message',
-    bgColor: 'danger'
-  }, 
-  {
-    id: 4,
-    text: 'Cristina Pride',
-    subText: 'Hi, How are you? What about our next meeting',
-    icon: 'uil uil-comment-message',
-    bgColor: 'danger'
-  }, 
+  }
 ];
 
 const ProfileMenus = [

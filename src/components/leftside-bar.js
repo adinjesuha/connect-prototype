@@ -36,7 +36,7 @@ const projectAppRoutes = {
   icon: FiBriefcase,
   badge: {
     variant: 'success',
-    text: '3',
+    text: '4',
   },
 };
 
@@ -52,6 +52,10 @@ const analisisAppRoutes = {
   path: '/analysis-page',
   name: 'Análisis',
   icon: FiEye,
+  badge: {
+    variant: 'info',
+    text: '1',
+  },
 };
 
 const menu = {

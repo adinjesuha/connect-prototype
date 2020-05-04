@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Connect prototype`,
+    title: `Connect Prototype`,
     description: `Prototype for Connect Dashboard MVP.`,
     author: `@adinjesuha`,
   },

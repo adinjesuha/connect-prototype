@@ -18,7 +18,7 @@ const MenuItemLink = ({ item, className }) => {
     >
       {item.icon && <Icon />}
       {item.badge && <span className={`font-size-12 badge badge-${item.badge.variant} float-right`}>{item.badge.text}</span>}
-      <span> {item.name} </span>
+      <span>{item.name}</span>
     </Link>
   );
 };
