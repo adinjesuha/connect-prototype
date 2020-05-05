@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'gatsby'
 import { Card, CardBody, Table } from 'reactstrap';
+import { FiDownload, FiFilePlus } from 'react-icons/fi';
 
 const StripedRowsTable = ({ sampleName, sampleType, parameters }) => (
 	<React.Fragment>
@@ -50,14 +52,14 @@ const About = (props) => (
 									<div className="media">
 										<div className="avatar-sm font-weight-bold mr-3">
 											<span className="avatar-title rounded bg-soft-primary text-primary">
-												<i className="uil-file-plus-alt font-size-18"></i>
+												<FiFilePlus className="uil-file-plus-alt font-size-18"/>
 											</span>
 										</div>
 										<div className="media-body">
-											<a href="/" className="d-inline-block mt-2">Archivo #1</a>
+											<Link to="/analysis-page" className="d-inline-block mt-2">Archivo #1</Link>
 										</div>
 										<div className="float-right mt-1">
-											<a href="/" className="p-2"><i className="uil-download-alt font-size-18"></i></a>
+											<Link to="/analysis-page" className="p-2"><FiDownload className="uil-download-alt font-size-18" /></Link>
 										</div>
 									</div>
 								</div>
@@ -67,14 +69,14 @@ const About = (props) => (
 									<div className="media">
 										<div className="avatar-sm font-weight-bold mr-3">
 											<span className="avatar-title rounded bg-soft-primary text-primary">
-												<i className="uil-file-plus-alt font-size-18"></i>
+												<FiFilePlus className="uil-file-plus-alt font-size-18"/>
 											</span>
 										</div>
 										<div className="media-body">
-											<a href="/" className="d-inline-block mt-2">Archivo #2</a>
+											<Link to="/analysis-page" className="d-inline-block mt-2">Archivo #2</Link>
 										</div>
 										<div className="float-right mt-1">
-											<a href="/" className="p-2"><i className="uil-download-alt font-size-18"></i></a>
+											<Link to="/analysis-page" className="p-2"><FiDownload className="uil-download-alt font-size-18" /></Link>
 										</div>
 									</div>
 								</div>
