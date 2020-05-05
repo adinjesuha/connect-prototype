@@ -8,7 +8,8 @@ import {
   FiCalendar, 
   FiBriefcase,
   FiFileText,
-  FiEye
+  FiEye,
+  FiAward
 } from 'react-icons/fi'
 import AppMenu from './app-menu';
 
@@ -58,6 +59,13 @@ const analisisAppRoutes = {
   },
 };
 
+const companyAppRoutes = {
+  id: 6,
+  path: '/company-page',
+  name: 'Empresas',
+  icon: FiAward,
+};
+
 const menu = {
   menuItems:[
     dashboardRoutes, 
@@ -65,6 +73,7 @@ const menu = {
     projectAppRoutes,
     analisisAppRoutes,
     invoiceAppRoutes,
+    companyAppRoutes,
   ]
 }
 

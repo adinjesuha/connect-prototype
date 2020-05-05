@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col, Media } from 'reactstrap';
+import { FiDownloadCloud } from 'react-icons/fi';
 
 const Attachments = () => (
   <Row>
@@ -10,8 +11,9 @@ const Attachments = () => (
           <Media>
             <div className="avatar-sm font-weight-bold mr-3">
               <span
-                  className="avatar-title rounded bg-soft-primary text-primary">
-                  <i className="uil-file-plus-alt font-size-18"></i>
+                className="avatar-title rounded bg-soft-primary text-primary"
+              >
+                <i className="uil-file-plus-alt font-size-18"></i>
               </span>
             </div>
             <Media body>
@@ -29,7 +31,7 @@ const Attachments = () => (
               <span
                 className="avatar-title rounded bg-soft-primary text-primary"
               >
-                <i className="uil-file-plus-alt font-size-18"></i>
+                <FiDownloadCloud />
               </span>
             </div>
             <Media body>

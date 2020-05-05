@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { Row, Col, Card, CardBody } from 'reactstrap'
+import React from 'react';
+import { Row, Col } from 'reactstrap';
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 import About from '../components/analysisComponents/about';
-import ProjectStats from '../components/analysisComponents/stats';
+import CompanyProfile from '../components/company/company-profile';
 
 const analysisData = [
   {
@@ -36,16 +35,19 @@ const analysisData = [
 
 
 const AnalysisPage = () => {
-  const [ data, setData ] = useState({
+  const data = {
     reportNumber: '001-01-2020',
     client: 'Lacthosa Centro',
-  })
+  }
+
   return (
     <Layout>
+    
       <SEO title="Análisis"/>
+
       <Row className="page-title">
         <Col sm={8} xl={6}>
-          <h4 className="mb-1 mt-0">Análisis de Laboratorio</h4>
+          <h4 className="mb-1 mt-0">{`Análisis de Laboratorio No. ${data.reportNumber}`}</h4>
         </Col>
         <Col sm={4} xl={6} className="text-md-right">
           <div className="btn-group ml-2 d-none d-sm-inline-block">
@@ -57,15 +59,20 @@ const AnalysisPage = () => {
         </Col>
       </Row>
 
-      <ProjectStats {...data} />
-
       <Row>
-      {analysisData.map((sample, i) => (
-        <Col key={i} xl={6}>
-          <About {...sample}/>
+
+        <Col xl={4}>
+          <CompanyProfile />
         </Col>
-      ))}
+
+        <Col xl={8}>
+        {analysisData.map((sample, i) => (
+          <About key={i} {...sample}/>
+        ))}
+        </Col>
+
       </Row>
+
     </Layout>
   )
 }

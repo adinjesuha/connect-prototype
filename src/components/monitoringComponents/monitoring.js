@@ -98,7 +98,7 @@ const Monitoring = ({monitoring}) => {
 					{percentage > 30 && percentage < 100 && (
 						<Progress 
 							value={percentage} 
-							color="info"
+							color="warning"
 							className="progress-sm" />
 					)}
 					{percentage === 100 && (

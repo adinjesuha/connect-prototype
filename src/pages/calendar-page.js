@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { Row, Col, Card, CardBody } from 'reactstrap';
 import Loadable from 'react-loadable';
@@ -19,7 +18,7 @@ const CalendarPage = () => (
   <Layout>
     <SEO title="Calendario" />
     <Row className="page-title align-items-center">
-      <Col sm={4} xl={6}>
+      <Col xl={12}>
         <h4 className="mb-1 mt-0">Calendario</h4>
       </Col>
     </Row>
@@ -33,7 +32,6 @@ const CalendarPage = () => (
         </Card>
       </Col>
     </Row>
-    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

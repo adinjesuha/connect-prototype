@@ -9,8 +9,7 @@ import {
   FiSettings, 
   FiUser,
   FiHelpCircle,
-  FiLogOut,
-  FiLifeBuoy
+  FiLogOut
 } from 'react-icons/fi'
 import NotificationDropdown from './notification-dropdown'
 import ProfileDropdown from './profile-dropdown'
